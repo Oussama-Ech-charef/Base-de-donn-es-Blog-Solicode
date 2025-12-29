@@ -27,3 +27,15 @@ CREATE TABLE Commentaire (
   id_article INT,
   FOREIGN KEY (id_article) REFERENCES Article(id)
 );
+
+SHOW TABLES;
+
+INSERT INTO Utilisateur (nom, email, mot_de_passe) VALUES ('Alice', 'alice@test.com', '1234');
+
+
+  ALTER TABLE Utilisateur ADD INDEX (nom);
+
+  ALTER TABLE Utilisateur COMMENT = 'Table des utilisateurs du blog';
+
+
+
